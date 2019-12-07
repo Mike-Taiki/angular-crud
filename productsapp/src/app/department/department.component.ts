@@ -20,7 +20,6 @@ export class DepartmentComponent implements OnInit {
   save() {
     this.departmentService.add({ name: this.depName }).subscribe(
       dep => {
-        console.log(dep);
         this.clearFields();
       },
       err => console.error(err)
